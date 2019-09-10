@@ -6,18 +6,18 @@
 # Currently written with questionable coding practices
 #
 
-
 library(stats)
 
-arr <- array(0,10)
-for (i in 1:10){
-  arr[i] <- if (runif(1) < 0.1) 1 else 0
-}
+coin_flips <- 10
+replicates <- 100
+Tails <- 1
+Heads <- 0
 
-for (j in 1:100){
-  arr <- array(0,10)
-  for (i in 1:10){
-    arr[i] <- if (runif(1) < 0.1) 1 else 0
+
+for (j in 1:replicates){
+  trial <- array(0,coin_flips)
+  for (i in 1:coin_flips){
+    trial[i] <- if (runif(1) < 0.1) Tails else Heads
   }
-  print(arr)
+  print(trial)
 }
