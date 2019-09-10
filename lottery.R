@@ -1,5 +1,5 @@
 # 
-# Author: Graham Smith
+# Author: Graham Smith // edit: Acero Bedoya Santiago
 # 
 # A simulation of a lottery based on flipping a bent coin 10 times
 #
